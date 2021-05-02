@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+  <test thread-count="5" name="Facebook-Test">
+  <parameter name="browserName" value="chrome"></parameter>
+  <parameter name="url" value="https://www.facebook.com/"></parameter>
+  <parameter name="userName" value="your facebook id"></parameter>
+  <parameter name="password" value="your facebook password"></parameter>
+    <classes>
+      <class name="com.automation.tests.Tc_Facebook_PostMessage"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="Wallethub-Test">
+  <parameter name="browserName" value="chrome"></parameter>
+  <parameter name="url" value="http://wallethub.com/profile/test_insurance_company/"></parameter>
+  <classes>
+      <class name="com.automation.tests.Tc_Wallethub_Review"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
